@@ -26,7 +26,7 @@ const disableButtons = () => {
 const enableButtons = () => {
   buttonRef.forEach((element) => {
     element.innerText = "";
-    element.disabled = "false";
+    element.disabled = false;
   });
 
   popupRef.classList.add("hide");
@@ -64,7 +64,7 @@ const winChecker = () => {
       buttonRef[i[2]].innerText,
     ];
 
-    if (element1 != "" && (element2 != "") & (element3 != "")) {
+    if (element1 != "" && (element2 != "") && (element3 != "")) {
       if (element1 == element2 && element2 == element3) {
         winFunction(element1);
       }
@@ -75,6 +75,8 @@ const winChecker = () => {
 buttonRef.forEach((element) => {
   element.addEventListener("click", () => {
     if (xTurn) {
+        xTurn = false;
+
       element.innerText = "X";
       element.disabled = true;
     } else {
