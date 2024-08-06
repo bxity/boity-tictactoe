@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 body {
     height: 100vh;
@@ -36,4 +39,16 @@ html {
     width: 22vmin;
     border: none;
     border-radius: 8px;
+}
+
+#restart {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em;
+    position: relative;
+    margin: 1em auto;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #537895;
+    border: none;
 }
