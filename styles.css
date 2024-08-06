@@ -7,10 +7,33 @@
 
 body {
     height: 100vh;
-    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 
 }
 
 html {
     font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    width: 70vmin;
+    height: 70vmin;
+}
+
+.button-option {
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
 }
